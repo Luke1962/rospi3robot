@@ -1,0 +1,4 @@
+<launch>
+  <node name="rm_scan_node" pkg="rm_scan" type="rm_scan_node"  output="screen">
+  </node>
+</launch>

@@ -1,0 +1,4 @@
+<launch>
+  <node name="rm_head_tracking_node" pkg="rm_head_tracking" type="rm_head_tracking_node"  output="screen">
+  </node>
+</launch>

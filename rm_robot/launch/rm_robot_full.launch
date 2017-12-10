@@ -1,0 +1,33 @@
+<launch>
+<!-- 	
+
+-->
+ 	<node ns="rm" name="rm_robot_node" pkg="rm_robot" type="rm_robot_node" output="screen"/>  
+
+	<!--
+	roslaunch rm_head_tracking head_tracking.launch
+	-->
+	<include file="$(find rm_head_tracking)/launch/rm_head_tracking.launch"/>
+
+
+	<!--
+	roslaunch rm_scan rm_scan.launch	
+	-->
+	<include file="$(find rm_scan)/launch/rm_scan.launch"/>
+
+	
+	<!--
+	roslaunch mpu6050 mpu6050_node	
+	-->	
+	<node ns="rm" name="mpu6050_node" pkg="mpu6050" type="mpu6050_node" output="screen"/>  
+
+
+	
+	<!-- SPEECH  --> 	
+	<!--	
+		<node ns="rm" name="speech_node" pkg="rm_speech" type="rm_speech_node"/>
+		<remap from="/rp/state_externalization/vocal_message" to="/chatter"/>
+	-->
+	<include file="$(find rm_speech)/launch/rm_speech.launch"/>
+
+</launch>
