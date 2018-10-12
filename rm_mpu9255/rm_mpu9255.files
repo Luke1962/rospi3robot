@@ -1,0 +1,19 @@
+include/compass3d/compass3d.h
+include/compass3d/evictingQueue.h
+include/compass3d/InertialSensor.h
+include/mpu9255/evictingQueue.cpp
+include/mpu9255/GyroAccel.h
+include/mpu9255/helper_3dmath.h
+include/mpu9255/I2Cdev.h
+include/mpu9255/Mag.h
+include/mpu9255/mpu9250.h
+include/mpu9255/mpu9255_9axis_motionapps41.h
+launch/rm_mpu9255.launch
+src/compass3d.cpp
+src/echo_imu.py
+src/Mag.cpp
+src/mpu9250.cpp
+src/mpu9255_node.cpp
+CMakeLists (copy).txt
+CMakeLists.txt
+package.xml
